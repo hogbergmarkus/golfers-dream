@@ -19,3 +19,8 @@
     border: none;
     margin-top: 20px;
 }
+
+/* Sign In/Out/Up / */
+.account-container {
+    margin-top: 10vh;
+}
