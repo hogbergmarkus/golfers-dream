@@ -13,3 +13,9 @@
 .hero-card-bg {
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+/* About the resort offerings / cards */
+.about-card {
+    border: none;
+    margin-top: 20px;
+}
