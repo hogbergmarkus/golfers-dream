@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-from accounts.models import CustomUser
+from user_profiles.models import CustomUser
 
 
 STATUS_TYPE = (
