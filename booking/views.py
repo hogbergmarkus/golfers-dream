@@ -12,7 +12,9 @@ def booking(request):
     if request.method == "POST":
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
-            booking_form.save()
+            booking_attempt = booking_form.save(commit=False)
+            booking_attempt.customer = request.user
+            booking_attempt.save()
             messages.add_message(
                 request, messages.SUCCESS,
                 'Reservation received! Approval pending.'

@@ -1,5 +1,4 @@
 from django.db import models
-from django.conf import settings
 from user_profiles.models import CustomUser
 
 
@@ -16,7 +15,7 @@ class Booking(models.Model):
     Stores a booking request related to :model:`auth.CustomUser`.
     """
     customer = models.ForeignKey(
-        settings.AUTH_USER_MODEL, on_delete=models.CASCADE
+        CustomUser, on_delete=models.CASCADE
         )
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
