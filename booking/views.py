@@ -17,7 +17,7 @@ def booking(request):
                 request, messages.SUCCESS,
                 'Reservation received! Approval pending.'
             )
-    
+
     booking_form = BookingForm()
 
     return render(
