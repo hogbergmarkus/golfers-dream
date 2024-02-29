@@ -134,6 +134,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
 
 ACCOUNT_FORMS = {'signup': 'user_profiles.forms.CustomSignupForm'}
 
