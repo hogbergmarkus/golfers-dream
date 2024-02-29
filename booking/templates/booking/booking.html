@@ -4,4 +4,19 @@
 {% block content %}
 <h2>Welcome to Golfers Dream</h2>
 <h3>Make your reservation here</h3>
+
+<form action="">
+    {{ booking_form.as_p }}
+    {% csrf_token %}
+    {{ form.first_name }}
+    {{ form.last_name }}
+    {{ form.email }}
+    {{ form.number_of_people }}
+    {{ form.check_in }}
+    {{ form.check_out }}
+    {{ form.message }}
+    <button type="button" class="btn btn-primary">Primary</button>
+</form>
+
+
 {% endblock %}
