@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import BookingForm
 
@@ -19,6 +19,7 @@ def booking(request):
                 request, messages.SUCCESS,
                 'Reservation received! Approval pending.'
             )
+            return redirect('user_profiles')
 
     booking_form = BookingForm()
 
