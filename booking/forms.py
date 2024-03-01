@@ -20,3 +20,7 @@ class BookingForm(forms.ModelForm):
             'check_out',
             'message'
         )
+        widgets = {
+            'check_in': forms.TextInput(attrs={'type': 'date'}),
+            'check_out': forms.TextInput(attrs={'type': 'date'})
+        }
