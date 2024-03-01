@@ -2,4 +2,27 @@
 {% load static %}
 {% block content %}
 
+{% if bookings %}
+<div class="container-fluid text-center my-4">
+    <h2>Your Bookings</h2>
+</div>
+
+{% for booking in bookings %}
+<div class="container profile-booking-container mt-3 text-center">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 border border-dark-subtle rounded mb-3">
+            <p>Check-in: {{ booking.check_in }}</p>
+            <p>Check-Out: {{ booking.check_out }}</p>
+            <p>Number of people: {{ booking.number_of_people }}</p>
+            <p>Status: {{ booking.status }}</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% else %}
+<p>You have no bookings yet.</p>
+{% endif %}
+
 {% endblock content %}
