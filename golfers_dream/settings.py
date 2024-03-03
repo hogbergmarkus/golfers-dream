@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-hogbergmark-golfersdrea-6bj3a748gwi.ws-eu108.gitpod.io',
+    '8000-hogbergmark-golfersdrea-vrbtwo3hxm1.ws-eu108.gitpod.io',
     '.herokuapp.com'
 ]
 
