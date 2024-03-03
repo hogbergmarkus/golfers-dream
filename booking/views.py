@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import BookingForm
+from .models import Booking
 
 
 # Create your views here.
@@ -31,3 +32,32 @@ def booking(request):
             'booking_form': booking_form
         },
     )
+
+
+def edit_booking(request, booking_id):
+    """
+    View to edit bookings
+    """
+    booking = get_object_or_404(Booking, pk=booking_id)
+
+    if request.method == "POST":
+        booking_form = BookingForm(data=request.POST, instance=booking)
+        if booking_form.is_valid() and booking.customer == request.user:
+            booking = booking_form.save(commit=False)
+            booking.status = 'pending'
+            booking.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Booking Updated!'
+            )
+            return redirect('user_profiles')
+        else:
+            messages.add_message(
+                request,
+                messages.ERROR,
+                'There was an ERROR trying to uptade the booking.'
+            )
+    else:
+        booking_form = BookingForm(instance=booking)
+    return render(request, 'booking/edit_booking.html', {'booking_form': booking_form})
