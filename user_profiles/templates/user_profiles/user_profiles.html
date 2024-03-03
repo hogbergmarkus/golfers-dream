@@ -15,6 +15,9 @@
             <p>Check-Out: {{ booking.check_out }}</p>
             <p>Number of people: {{ booking.number_of_people }}</p>
             <p>Status: {{ booking.status }}</p>
+            {% if user.is_authenticated and customer.id == customuser %}
+            <a href="{% url 'edit_booking' booking.id %}" class="btn btn-warning">Edit</a>
+            {% endif %}
         </div>
     </div>
 </div>
