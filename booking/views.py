@@ -61,3 +61,24 @@ def edit_booking(request, booking_id):
     else:
         booking_form = BookingForm(instance=booking)
     return render(request, 'booking/edit_booking.html', {'booking_form': booking_form})
+
+
+def delete_booking(request, booking_id):
+    """
+    View to delete bookings
+    """
+    booking = get_object_or_404(Booking, pk=booking_id)
+
+    if request.method == "POST" and booking.customer == request.user:
+        booking.delete()
+        messages.success(
+            request,
+            'Your booking has been deleted. We hope you will stay with us again!'
+        )
+        return redirect('user_profiles')
+    else:
+        return render(
+            request,
+            'booking/delete_booking.html',
+            {'booking': booking}
+        )
