@@ -1,3 +1,15 @@
+/* Bootstrap icons */
+.bi {
+    color: rgb(44, 44, 44);
+    font-size: 200%;
+}
+
+/* Footer links */
+.list-unstyled a {
+    color: black;
+    text-decoration: none;
+}
+
 /* Hero section */
 .hero-section {
     background-image: url("../images/hero_image.webp");
