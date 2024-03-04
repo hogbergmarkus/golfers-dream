@@ -29,3 +29,8 @@
 .profile-booking-container {
     max-width: 90vw;
 }
+
+/* Button styles that apply to all buttons */
+.btn {
+    margin-bottom: 10px;
+}
