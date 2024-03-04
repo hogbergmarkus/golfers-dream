@@ -42,30 +42,38 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == home_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">What we offer</a>
+                        <a class="nav-link {% if request.path == about_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'about' %}">What we offer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                        <a class="nav-link {% if request.path == contact_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'booking' %}">Booking</a>
+                        <a class="nav-link {% if request.path == booking_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'booking' %}">Booking</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'user_profiles' %}">Profile</a>
+                        <a class="nav-link {% if request.path == user_profiles_url %} active"
+                            aria-current="page{% endif %}" href="{% url 'user_profiles' %}">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
+                        <a class="nav-link {% if request.path == logout_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'account_logout' %}">Sign Out</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+                        <a class="nav-link {% if request.path == signup_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'account_signup' %}">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
+                        <a class="nav-link {% if request.path == login_url %} active" aria-current="page{% endif %}"
+                            href="{% url 'account_login' %}">Sign In</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -106,17 +114,23 @@
                 <div class="col-4">
                     <h5>Follow Us</h5>
                     <ul class="list-unstyled d-flex justify-content-evenly">
-                        <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
-                        <li><a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://facebook.com" rel="noopener" target="_blank"
+                                aria-label="Go to our facebook, opens in a new tab"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com" rel="noopener" target="_blank"
+                                aria-label="Go to our twitter, opens in a new tab"><i class="bi bi-twitter-x"></i></a>
+                        </li>
+                        <li><a href="https://instagram.com" rel="noopener" target="_blank"
+                                aria-label="Go to our instagram, opens in a new tab"><i class="bi bi-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-4">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'about' %}">What we offer</a></li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li><a href="{% url 'home' %}" aria-label="Go to our home page">Home</a></li>
+                        <li><a href="{% url 'about' %}" aria-label="Go to our about page">What we offer</a></li>
+                        <li><a href="{% url 'contact' %}" aria-label="Go to our Contact page">Contact</a></li>
                     </ul>
                 </div>
             </div>
