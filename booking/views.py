@@ -28,7 +28,6 @@ def booking(request):
         request,
         'booking/booking.html',
         {
-            'booking': booking,
             'booking_form': booking_form
         },
     )

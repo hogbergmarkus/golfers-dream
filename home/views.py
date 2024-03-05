@@ -40,7 +40,6 @@ def contact(request):
         request,
         'home/contact.html',
         {
-            'contact': contact,
             'contact_form': contact_form
         },
     )
