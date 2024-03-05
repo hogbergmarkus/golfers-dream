@@ -21,6 +21,13 @@ def booking(request):
                 'Reservation received! Approval pending.'
             )
             return redirect('user_profiles')
+        else:
+            messages.add_message(
+                request, messages.ERROR,
+                'Something went wrong, please try agin.',
+            )
+            return redirect('booking')
+
 
     booking_form = BookingForm()
 
