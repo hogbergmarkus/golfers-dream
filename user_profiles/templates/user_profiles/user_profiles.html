@@ -26,7 +26,11 @@
 
 
 {% else %}
-<p>You have no bookings yet.</p>
+<div class="container-fluid text-center my-4">
+    <h2>Your Bookings</h2>
+    <p>You have no bookings yet, go to our booking page to make your reservation.</p>
+    <a href="{% url 'booking' %}" class="btn btn-primary">Book Now!</a>
+</div>
 {% endif %}
 
 {% endblock content %}
