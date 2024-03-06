@@ -26,7 +26,12 @@ def booking(request):
                 request, messages.ERROR,
                 'Something went wrong, please try agin.',
             )
-            return redirect('booking')
+            booking_form = BookingForm(data=request.POST)
+            return render(
+                request,
+                'booking/booking.html',
+                {'booking_form': booking_form}
+            )
 
 
     booking_form = BookingForm()
