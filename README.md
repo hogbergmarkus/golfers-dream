@@ -11,3 +11,9 @@ They offer hotel, restaurant, relaxation and most importantly Golf!
 The idea is that people want to come here and thoroughly relax, with their favorite hobby attached.
 
 You make one booking, and most things are included.
+
+## Table of contents
+
+- [Golfers Dream](#golfers-dream)
+  - [Introduction](#introduction)
+  - [Table of contents](#table-of-contents)
