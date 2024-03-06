@@ -27,15 +27,28 @@ class BookingForm(forms.ModelForm):
         }
 
     def clean_check_in(self):
-        check_in = self.cleaned_data['check_in']
+        """
+        Checks that check-in is not in the past
+        """
+        check_in = self.cleaned_data.get('check_in')
         if check_in < datetime.date.today():
             raise forms.ValidationError("Check-in date cannot be in the past.")
         return check_in
 
     def clean_check_out(self):
-        check_out = self.cleaned_data['check_out']
+        """
+        Checks that check-out is not in the past,
+        and that check-out is not before check-in.
+        """
+        check_out = self.cleaned_data.get('check_out')
+        check_in = self.cleaned_data.get('check_in')
         if check_out < datetime.date.today():
             raise forms.ValidationError(
-                "Check-out date cannot be in the past or before Check-in"
+                "Check-out date cannot be in the past."
                 )
+        
+        if check_in and check_out < check_in:
+            raise forms.ValidationError(
+                'Check-out cannot be before check-in'
+            )
         return check_out
