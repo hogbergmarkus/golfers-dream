@@ -33,7 +33,6 @@ def booking(request):
                 {'booking_form': booking_form}
             )
 
-
     booking_form = BookingForm()
 
     return render(
@@ -67,11 +66,18 @@ def edit_booking(request, booking_id):
             messages.add_message(
                 request,
                 messages.ERROR,
-                'There was an ERROR trying to uptade the booking.'
+                'There was an ERROR trying to update the booking.'
             )
     else:
         booking_form = BookingForm(instance=booking)
-    return render(request, 'booking/edit_booking.html', {'booking_form': booking_form})
+
+    return render(
+        request,
+        'booking/edit_booking.html',
+        {
+            'booking_form': booking_form
+        },
+    )
 
 
 def delete_booking(request, booking_id):
@@ -84,12 +90,14 @@ def delete_booking(request, booking_id):
         booking.delete()
         messages.success(
             request,
-            'Your booking has been deleted. We hope you will stay with us again!'
+            'Booking has been deleted. We hope you will stay with us again!'
         )
         return redirect('user_profiles')
     else:
         return render(
             request,
             'booking/delete_booking.html',
-            {'booking': booking}
+            {
+                'booking': booking
+            },
         )
