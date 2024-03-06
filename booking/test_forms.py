@@ -201,3 +201,21 @@ class TestBookingForm(TestCase):
             booking_form.is_valid(),
             msg='Form not valid'
             )
+
+    def test_check_out_before_check_in_is_invalid(self):
+        """
+        Test for check_out before check-in invalid
+        """
+        booking_form = BookingForm({
+            'first_name': 'Computer',
+            'last_name': 'Wiz',
+            'email': 'test.test@test.org',
+            'number_of_people': 2,
+            'check_in': '2024-04-20',
+            'check_out': '2024-04-19',
+            'message': 'Just testing',
+        })
+        self.assertFalse(
+            booking_form.is_valid(),
+            msg='Check out before check-in, but form is valid'
+            )
