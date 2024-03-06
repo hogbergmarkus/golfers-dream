@@ -52,3 +52,11 @@ class BookingForm(forms.ModelForm):
                 'Check-out cannot be before check-in'
             )
         return check_out
+
+    def clean_number_of_people(self):
+        number_of_people = self.cleaned_data.get('number_of_people')
+        if number_of_people < 1:
+            raise forms.ValidationError(
+                "Number of people cannot be less than 1"
+            )
+        return number_of_people
