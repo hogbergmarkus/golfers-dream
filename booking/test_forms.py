@@ -255,3 +255,21 @@ class TestBookingForm(TestCase):
             booking_form.is_valid(),
             msg='Number of people is 0'
             )
+
+    def test_number_of_people_not_more_than_ten(self):
+        """
+        Test for number of people not to be more than 10
+        """
+        booking_form = BookingForm({
+            'first_name': 'Computer',
+            'last_name': 'Wiz',
+            'email': 'test.test@test.org',
+            'number_of_people': 11,
+            'check_in': '2050-03-04',
+            'check_out': '2050-03-11',
+            'message': 'Just testing',
+        })
+        self.assertFalse(
+            booking_form.is_valid(),
+            msg='Number of people is more than 10'
+            )
