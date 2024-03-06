@@ -16,8 +16,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertTrue(booking_form.is_valid(), msg='Form not valid')
@@ -31,8 +31,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -49,8 +49,8 @@ class TestBookingForm(TestCase):
             'last_name': '',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -67,8 +67,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': '',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -85,8 +85,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -103,8 +103,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': None,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -122,7 +122,7 @@ class TestBookingForm(TestCase):
             'email': 'test.test@test.org',
             'number_of_people': 2,
             'check_in': '',
-            'check_out': '2024-04-04',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -139,8 +139,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-0',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-0',
+            'check_out': '2050-04-04',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -157,7 +157,7 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
+            'check_in': '2050-04-01',
             'check_out': '',
             'message': 'Just testing',
         })
@@ -175,8 +175,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-0',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-0',
             'message': 'Just testing',
         })
         self.assertFalse(
@@ -193,8 +193,8 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-01',
-            'check_out': '2024-04-04',
+            'check_in': '2050-04-01',
+            'check_out': '2050-04-04',
             'message': '',
         })
         self.assertTrue(
@@ -211,11 +211,47 @@ class TestBookingForm(TestCase):
             'last_name': 'Wiz',
             'email': 'test.test@test.org',
             'number_of_people': 2,
-            'check_in': '2024-04-20',
+            'check_in': '2050-04-20',
             'check_out': '2024-04-19',
             'message': 'Just testing',
         })
         self.assertFalse(
             booking_form.is_valid(),
             msg='Check out before check-in, but form is valid'
+            )
+
+    def test_check_in_before_today_date(self):
+        """
+        Test for check_in before today date
+        """
+        booking_form = BookingForm({
+            'first_name': 'Computer',
+            'last_name': 'Wiz',
+            'email': 'test.test@test.org',
+            'number_of_people': 2,
+            'check_in': '2024-03-04',
+            'check_out': '2050-03-11',
+            'message': 'Just testing',
+        })
+        self.assertFalse(
+            booking_form.is_valid(),
+            msg='Check in before today date, but form is valid'
+            )
+
+    def test_number_of_people_not_zero(self):
+        """
+        Test for number of people not to be 0
+        """
+        booking_form = BookingForm({
+            'first_name': 'Computer',
+            'last_name': 'Wiz',
+            'email': 'test.test@test.org',
+            'number_of_people': 0,
+            'check_in': '2050-03-04',
+            'check_out': '2050-03-11',
+            'message': 'Just testing',
+        })
+        self.assertFalse(
+            booking_form.is_valid(),
+            msg='Number of people is 0'
             )
