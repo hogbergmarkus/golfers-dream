@@ -11,6 +11,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ booking_form | crispy }}
+                <a href="{% url 'user_profiles' %}" class="btn btn-secondary">Cancel</a>
                 <button type="submit" class="btn btn-primary">Update Booking</button>
             </form>
         </div>
