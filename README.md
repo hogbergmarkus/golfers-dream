@@ -26,6 +26,7 @@ You make one booking, and most things are included.
     - [Fonts](#fonts)
     - [Colors](#colors)
   - [Screenshots of Finished Website](#screenshots-of-finished-website)
+  - [Deployment](#deployment)
 
 ## User Personas
 
@@ -128,3 +129,28 @@ Your Profile page is accessible after sign in. This is how it look without any b
 With some bookings it looks like this.
 
 ![Profile with bookings](documentation/images/profile_screenshot.png)
+
+## Deployment
+
+The project was deployed to Heroku as the steps below details.
+
+- I set up a postgreSQL server at [elephantsql](https://customer.elephantsql.com/).
+- Made sure to adjust the settings file accordingly, to utilize that database.
+- Made sure to have my SECRET_KEY and DATABASE_URL in the env.py file.
+- And the env.py file added to .gitignore.
+- I installed gunicorn version 20.1.
+- Add gunicorn to requirements.txt.
+- Create a Procfile, and declare it is a web process followed by the command to execute the project.
+- Run the command collectstatic, to collect static files.
+- Set Debug to False in the settings file.
+- Add Heroku to allowed hosts in the settings file (.herokuapp).
+- Push the code to GitHub.
+- Create a new app on [Heroku](https://id.heroku.com/login).
+- On the settings tab of my app I clicked "Reveal Config Vars" and add DATABASE_URL and SECRET_KEY.
+- DATABASE_URL got the value of my postgresql database url.
+- SECRET_KEY got a very long and complicated value that I'm not going to tell you about!
+- Then I went back to the deploy tab of my app, and clicked connect to GitHub.
+- I then searched for my repository and connected it to the app.
+- Click Deploy branch.
+
+Here is a link to my Deployed project: [Golfers Dream](https://golfers-dream-2d6e1b933be7.herokuapp.com/)
