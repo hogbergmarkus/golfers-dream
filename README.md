@@ -21,6 +21,10 @@ You make one booking, and most things are included.
   - [User Stories](#user-stories)
   - [User Goals](#user-goals)
   - [Website Owner Goals](#website-owner-goals)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Colors](#colors)
 
 ## User Personas
 
@@ -71,3 +75,11 @@ The interface is simple but striking. You should be attracted to the beautiful i
 followed by the lyxury shown on the "what we offer" tab. That is if you don't immediately press the "Book Now" button.
 
 The website should work on any device, mobile, tablet or desktop.
+
+## Design
+
+### Wireframes
+
+### Fonts
+
+### Colors
