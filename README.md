@@ -80,6 +80,20 @@ The website should work on any device, mobile, tablet or desktop.
 
 ### Wireframes
 
+You will find the link to my wireframes here: [WireFrames](https://github.com/hogbergmarkus/golfers-dream/tree/main/documentation/wireframes).
+
+Alternatively go to my [GitHub repository](https://github.com/hogbergmarkus/golfers-dream) and look in the documentation folder.
+
 ### Fonts
 
+I applied Roboto-Serif to the entire body, but overrid it for paragraphs with Roboto for better readability.
+
+Roboto-Serif has that luxury feel that I was trying to achieve with the website,
+
+while Roboto is less stylish, but easier to read.
+
 ### Colors
+
+I used color extremely sparingly, only a slight shade to the navbar and footer.
+
+I wanted the images to pop, and no distraction on the form pages except for the buttons.
