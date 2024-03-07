@@ -6,11 +6,15 @@ class CustomSignupForm(SignupForm):
     """
     Extends the allauth signup form with additional fields.
     """
-    first_name = forms.CharField(max_length=50, required=True, label='First Name')
-    last_name = forms.CharField(max_length=50, required=True, label='Last Name')
+    first_name = forms.CharField(
+        max_length=50, required=True, label='First Name'
+        )
+    last_name = forms.CharField(
+        max_length=50, required=True, label='Last Name'
+        )
     username = forms.CharField(max_length=50, required=True, label='Username')
     email = forms.EmailField(max_length=50, required=True, label='Email')
-    
+
     def save(self, request):
         user = super(CustomSignupForm, self).save(request)
         user.first_name = self.cleaned_data['first_name']

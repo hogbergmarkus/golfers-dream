@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from booking.models import Booking
 
+
 # Create your views here.
 def user_profiles(request):
     """
@@ -10,7 +11,7 @@ def user_profiles(request):
     """
     user_bookings = Booking.objects.filter(customer=request.user)
 
-    return render (
+    return render(
         request,
         'user_profiles/user_profiles.html',
         {

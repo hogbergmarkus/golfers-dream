@@ -15,7 +15,7 @@ def about(request):
     """
     Render the home/about.html template.
     """
-    return render (request, 'home/about.html')
+    return render(request, 'home/about.html')
 
 
 def contact(request):

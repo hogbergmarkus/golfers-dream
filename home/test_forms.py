@@ -18,7 +18,7 @@ class TestContactMessageForm(TestCase):
             'message': 'Hello, room for two please.',
         })
         self.assertTrue(contact_form.is_valid(), msg='Form not valid')
-    
+
     def test_name_is_reqiured(self):
         """
         Test for name field
