@@ -25,6 +25,7 @@ You make one booking, and most things are included.
     - [Wireframes](#wireframes)
     - [Fonts](#fonts)
     - [Colors](#colors)
+  - [Screenshots of Finished Website](#screenshots-of-finished-website)
 
 ## User Personas
 
@@ -97,3 +98,33 @@ while Roboto is less stylish, but easier to read.
 I used color extremely sparingly, only a slight shade to the navbar and footer.
 
 I wanted the images to pop, and no distraction on the form pages except for the buttons.
+
+## Screenshots of Finished Website
+
+This is the landing page, beautiful in its simplicity.
+
+![Homepage](documentation/images/home_screenshot.png)
+
+On the tab "What we offer" potential custumers are further drawn in.
+
+![What we offer](documentation/images/about_screenshot.png)
+
+The contact page offers a contact form for everyone, signed in or not.
+
+![Contact](documentation/images/contact_screenshot.png)
+
+The booking page requires users to be signed in.
+
+![Booking not signed in](documentation/images/booking_not_signed_in_screenshot.png)
+
+If signed in, the booking page instead shows you a booking form.
+
+![Booking signed in](documentation/images/booking_signed_in_screenshot.png)
+
+Your Profile page is accessible after sign in. This is how it look without any bookings.
+
+![Profile with no bookings](documentation/images/profile_no_bookings.png)
+
+With some bookings it looks like this.
+
+![Profile with bookings](documentation/images/profile_screenshot.png)
