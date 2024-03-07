@@ -140,7 +140,12 @@ The project was deployed to Heroku as the steps below details.
 - And the env.py file added to .gitignore.
 - I installed gunicorn version 20.1.
 - Add gunicorn to requirements.txt.
+- Install whitenoise version 5.3.
+- Add whitenoise to requirements.txt.
+- Add whitenoise to middleware settings file.
+- Also in the settings file create a path for whitenoise to collect static files.
 - Create a Procfile, and declare it is a web process followed by the command to execute the project.
+- Add a runtime.txt file to root directory, and add a supported python version as close as possible to my own.
 - Run the command collectstatic, to collect static files.
 - Set Debug to False in the settings file.
 - Add Heroku to allowed hosts in the settings file (.herokuapp).
