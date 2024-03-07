@@ -19,6 +19,8 @@ You make one booking, and most things are included.
   - [Table of Contents](#table-of-contents)
   - [User Personas](#user-personas)
   - [User Stories](#user-stories)
+  - [User Goals](#user-goals)
+  - [Website Owner Goals](#website-owner-goals)
 
 ## User Personas
 
@@ -44,3 +46,28 @@ The user storys in my GitHub project are as follows:
 - As a Site Admin I can view contact requests from the contact form so that I can respond to the request.
 - As a Site Admin I can create, read, update and delete user bookings so that I can manage the bookings.
 - As a Site User I can view images and read about the resort so that I can decide if it is for me.
+
+## User Goals
+
+New user:
+
+- I am able to find my way accross the website without hassle.
+- I can read enough about the resort to understand what it is about.
+- Sign up process is easy.
+- I can contact the resort without registering for an account.
+
+Returning user:
+
+- Sign in is easy.
+- My bookings are viewable, and I can manage them.
+- I can contact the resort if I need to.
+
+## Website Owner Goals
+
+The purpose of this site is to attract golfers that want some extra luxury.
+
+The interface is simple but striking. You should be attracted to the beautiful image of the golf course on the home page,
+
+followed by the lyxury shown on the "what we offer" tab. That is if you don't immediately press the "Book Now" button.
+
+The website should work on any device, mobile, tablet or desktop.
