@@ -221,6 +221,12 @@ With some bookings it looks like this.
 
 ![Form safe guard](documentation/images/form_safe_guard.png)
 
+- When choosing to delete a booking, there is a confirmation page showing.
+  
+  This is useful to not be able to accidentaly delete a booking.
+
+![Delete booking confirm](documentation/images/delete_booking_confirmation.png)
+
 - I've tried putting cancel buttons where necessary, this should help navigation on the site.
   
   Instead of having to rely on browser built in navigation, for example when editing a booking.
@@ -240,6 +246,12 @@ With some bookings it looks like this.
   This is good to let users know their action was unsuccessful.
 
 ![Error message](documentation/images/message_error.png)
+
+- When signed in there is a persistant message just below the navigation bar, letting you know you are signed in.
+  
+  This is useful, and makes the site feel more personal.
+
+![Signed in status](documentation/images/signed_in_status.png)
 
 ## Deployment
 
