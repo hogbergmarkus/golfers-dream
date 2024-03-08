@@ -26,6 +26,7 @@ You make one booking, and most things are included.
     - [Fonts](#fonts)
     - [Colors](#colors)
   - [Screenshots of Finished Website](#screenshots-of-finished-website)
+  - [Features](#features)
   - [Deployment](#deployment)
 
 ## User Personas
@@ -129,6 +130,116 @@ Your Profile page is accessible after sign in. This is how it look without any b
 With some bookings it looks like this.
 
 ![Profile with bookings](documentation/images/profile_screenshot.png)
+
+## Features
+
+- Navigation bar is active, and will display the current page you are on.
+
+  This makes navigation easier.
+
+![Navbar active](documentation/images/navbar_active.png)
+
+- Navigation bar is responsive, which is useful for anyone visiting the site on a smaller screen.
+
+![Navbar responsive](documentation/images/navbar_responsive.png)
+
+- In the footer is an address, links to social media, links for the page itself and a copyright text.
+  
+  Serving an address is good manners, so people can figure out how to get there.
+
+  Links to social media seems like a good idea considering how many people use it.
+
+  I though some duplicate links in the footer would be useful, especially if the website expands with more content.
+  
+  So when you are at the bottom of the page you can click a new link straight away,
+
+  instead of having to scroll all the way to the top.
+
+![Footer](documentation/images/footer.png)
+
+- A beautiful image to draw people in, with a call to action in the center.
+  
+  The info box with call to action in the middle should give you an immediate idea of what the resort offers,
+
+  and a button to act if you are already convinced.
+
+![Hero image call to action](documentation/images/hero_with_call_to_action.png)
+
+- On the "what we offer" page you can read about the resorts offerings.
+  
+  Especially for a new user, this is the place to get a feel for what the resort is like.
+
+![What we offer](documentation/images/what_we_offer.png)
+
+- The contact page offers a form, to send a message to the resort.
+  
+  This can be of use both to new and existing users, since you can ask anything in this form.
+
+![Contact form](documentation/images/contact_form.png)
+
+- The booking page will display a message when not signed in, asking you to sign in or sign up.
+  
+  Additionally there are two cleatly marked buttons able to take you there.
+
+  This is useful to not have to go looking for the right place.
+
+![Booking signed out](documentation/images/booking_signed_out.png)
+
+- When signed in you will see the booking form, allowing you to make a reservation.
+  
+  This part is vital to the site, since we want people to book a stay.
+
+![Booking signed in user](documentation/images/booking_form_signed_in_user.png)
+
+- The sign up form captures all the information needed for the user.
+  
+  This is useful to be able to let them make a booking.
+
+![Sign up form](documentation/images/sign_up_form.png)
+
+- The sign in form lets a registered user sign in to the website.
+  
+  They will then be able to make a booking and see their already crated bookings.
+
+![Sign in form](documentation/images/sign_in_form.png)
+
+- On the profile page you can see your bookings, along with choices to edit or delete them.
+  
+  This is good for users to be able to make changes to their reservations.
+
+![Profile with booking](documentation/images/profile_with_booking.png)
+
+- When you choose to edit your booking, the form is pre filled with all the information from your previous booking.
+  
+  This is good for ease of use, you can see right away how your booking looked when you made it.
+
+![Edit booking](documentation/images/edit_booking.png)
+
+- There are several safeguards on the booking form that should help prevent user error.
+  
+  The form will display what went wrong. This should help correct misstakes.
+
+![Form safe guard](documentation/images/form_safe_guard.png)
+
+- I've tried putting cancel buttons where necessary, this should help navigation on the site.
+  
+  Instead of having to rely on browser built in navigation, for example when editing a booking.
+
+  You can simply press the cancel button to take you back.
+
+![Cancel button](documentation/images/cancel_button.png)
+
+- I've put success messages on successful user actions.
+  
+  This is useful feedback that their actions were successfull.
+
+![Success message](documentation/images/message_success.png)
+
+- There are also error messages showing if something went wrong.
+  
+  This is good to let users know their action was unsuccessful.
+
+![Error message](documentation/images/message_error.png)
 
 ## Deployment
 
