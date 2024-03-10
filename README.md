@@ -282,3 +282,9 @@ The project was deployed to Heroku as the steps below details.
 - Click Deploy branch.
 
 Here is a link to my Deployed project: [Golfers Dream](https://golfers-dream-2d6e1b933be7.herokuapp.com/)
+
+Cloning or forking this project can be done from my [GitHub repository](https://github.com/hogbergmarkus/golfers-dream)
+
+You will need to install the dependencies using the pip install -r requirements.txt command.
+
+The database I used for this project is postgreSQL, specifically [elephantsql](https://customer.elephantsql.com/login).
