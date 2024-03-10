@@ -73,13 +73,21 @@ def edit_booking(request, booking_id):
     else:
         booking_form = BookingForm(instance=booking)
 
-    return render(
-        request,
-        'booking/edit_booking.html',
-        {
-            'booking_form': booking_form
-        },
-    )
+        if booking.customer == request.user:
+            return render(
+                request,
+                'booking/edit_booking.html',
+                {
+                    'booking_form': booking_form
+                },
+            )
+        else:
+            messages.add_message(
+                request,
+                messages.ERROR,
+                'There was an ERROR getting the booking.'
+            )
+            return redirect('home')
 
 
 @login_required
@@ -97,10 +105,18 @@ def delete_booking(request, booking_id):
         )
         return redirect('user_profiles')
     else:
-        return render(
-            request,
-            'booking/delete_booking.html',
-            {
-                'booking': booking
-            },
-        )
+        if booking.customer == request.user:
+            return render(
+                request,
+                'booking/delete_booking.html',
+                {
+                    'booking': booking
+                },
+            )
+        else:
+            messages.add_message(
+                request,
+                messages.ERROR,
+                'There was an ERROR getting the booking.'
+            )
+            return redirect('home')
