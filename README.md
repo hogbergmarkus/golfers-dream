@@ -27,6 +27,7 @@ You make one booking, and most things are included.
     - [Colors](#colors)
   - [Screenshots of Finished Website](#screenshots-of-finished-website)
   - [Features](#features)
+  - [Features to Add](#features-to-add)
   - [Deployment](#deployment)
 
 ## User Personas
@@ -252,6 +253,17 @@ With some bookings it looks like this.
   This is useful, and makes the site feel more personal.
 
 ![Signed in status](documentation/images/signed_in_status.png)
+
+## Features to Add
+
+In the future there are a lot that could be added to this website, I will list a few below:
+
+- Clickable items under the "What we offer" tab, to expand to show more information about each thing.
+- More customizable usertypes, such as guest, receptionist, manager and so on.
+  
+  These can also then be set up with each its own restrictions and capabilities.
+- The profile page could show editable information about the users account, and maybe golf handicap.
+- A shop could be added to the page.
 
 ## Deployment
 
