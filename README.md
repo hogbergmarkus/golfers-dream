@@ -29,6 +29,7 @@ You make one booking, and most things are included.
   - [Features](#features)
   - [Features to Add](#features-to-add)
   - [Deployment](#deployment)
+  - [Languages and Frameworks](#languages-and-frameworks)
 
 ## User Personas
 
@@ -300,3 +301,13 @@ Cloning or forking this project can be done from my [GitHub repository](https://
 You will need to install the dependencies using the pip install -r requirements.txt command.
 
 The database I used for this project is postgreSQL, specifically [elephantsql](https://customer.elephantsql.com/login).
+
+## Languages and Frameworks
+
+Both Django 4.2.1 and Bootstrap 5.3 were used to create this project.
+
+Added libraries can be seen in the requirements.txt file.
+
+Additionally, custom- python, html, django templating language, and css were all used.
+
+The README was written using markdown.
