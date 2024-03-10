@@ -31,6 +31,7 @@ You make one booking, and most things are included.
   - [Deployment](#deployment)
   - [Languages and Frameworks](#languages-and-frameworks)
   - [Testing](#testing)
+    - [Validation](#validation)
     - [Lighthouse Report](#lighthouse-report)
 
 ## User Personas
@@ -315,6 +316,10 @@ Additionally, custom- python, html, django templating language, and css were all
 The README was written using markdown.
 
 ## Testing
+
+### Validation
+
+Python was validated using [PEP8 CI python linter](https://pep8ci.herokuapp.com/), with no errors or warnings.
 
 ### Lighthouse Report
 
