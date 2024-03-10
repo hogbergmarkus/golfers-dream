@@ -30,6 +30,8 @@ You make one booking, and most things are included.
   - [Features to Add](#features-to-add)
   - [Deployment](#deployment)
   - [Languages and Frameworks](#languages-and-frameworks)
+  - [Testing](#testing)
+    - [Lighthouse Report](#lighthouse-report)
 
 ## User Personas
 
@@ -311,3 +313,53 @@ Added libraries can be seen in the requirements.txt file.
 Additionally, custom- python, html, django templating language, and css were all used.
 
 The README was written using markdown.
+
+## Testing
+
+### Lighthouse Report
+
+The following are lighthouse reports from my different pages:
+
+- Home:
+
+![Home lighthouse](documentation/images/home_lighthouse.png)
+
+- What we offer:
+
+![What we offer](documentation/images/what_we_offer_lighthouse.png)
+
+- Contact:
+
+![Contact](documentation/images/contact_lighthouse.png)
+
+- Booking, not signed in:
+
+![Booking not signed in](documentation/images/booking_not_signed_in_lighthouse.png)
+
+- Booking signed in:
+
+![Booking signed in](documentation/images/booking_signed_in_lighthouse.png)
+
+- Edit booking:
+
+![Edit booking](documentation/images/edit_booking_lighthouse.png)
+
+- Delete booking:
+
+![Delete booking](documentation/images/delete_booking_lighthouse.png)
+
+- Profile:
+
+![Profile](documentation/images/profile_lighthouse.png)
+
+- Sign up:
+
+![Sign up](documentation/images/sign_up_lighthouse.png)
+
+- Sign in:
+
+![Sign in](documentation/images/sign_in_lighthouse.png)
+
+- Sign out:
+
+![Sign out](documentation/images/sign_out_lighthouse.png)
