@@ -321,6 +321,8 @@ The README was written using markdown.
 
 Python was validated using [PEP8 CI python linter](https://pep8ci.herokuapp.com/), with no errors or warnings.
 
+CSS was validated using [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input), with no errors or warnings.
+
 ### Lighthouse Report
 
 The following are lighthouse reports from my different pages:
