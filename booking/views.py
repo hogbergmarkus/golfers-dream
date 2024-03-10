@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import BookingForm
@@ -44,6 +45,7 @@ def booking(request):
     )
 
 
+@login_required
 def edit_booking(request, booking_id):
     """
     View to edit bookings
@@ -80,6 +82,7 @@ def edit_booking(request, booking_id):
     )
 
 
+@login_required
 def delete_booking(request, booking_id):
     """
     View to delete bookings
