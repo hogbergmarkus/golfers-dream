@@ -51,6 +51,7 @@ You make one booking, and most things are included.
       - [Admin](#admin)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
+  - [Fixed Bugs](#fixed-bugs)
 
 ## User Personas
 
@@ -576,8 +577,16 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 
 ### Bug 1
 
-On the Booking page, I had a Server Error 500 occuring when my booking form methods caught an error.
+On the edit booking page, I had a Server Error 500 occuring when my booking form methods caught an error.
 
 The image shows my method that caused the server error.
 
 ![Bug server error](documentation/images/bug_1.png)
+
+## Fixed Bugs
+
+I realized my view was not handeling this at all and I added the code below to fix this issue.
+
+![Bug fix 1](documentation/images/bug_fix_1.png)
+
+Now in case the form is not valid, the form renders again with its error message.
