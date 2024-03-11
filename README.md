@@ -378,9 +378,20 @@ The following are lighthouse reports from my different pages:
 
 The website was tested throughout development to be functional for mobiles, tablets, laptops and desktops.
 
-The main devices used for testing have been:
+The main devices used for testing during development have been:
 
 - My desktop
-- Google pixel 8 pro
-- Iphone 13 pro
+- Samsung galaxy fold
+- Iphone 12 pro
 - Ipad Pro
+
+After deploying to Heroku, I've also tested further on:
+
+- Google pixel 8 pro
+- iphone 13 pro
+
+The browsers tested have been:
+
+- Google Chrome
+- Microsoft Edge
+- Safari
