@@ -70,6 +70,13 @@ def edit_booking(request, booking_id):
                 messages.ERROR,
                 'There was an ERROR trying to update the booking.'
             )
+            return render(
+                request,
+                'booking/edit_booking.html',
+                {
+                    'booking_form': booking_form
+                },
+            )
     else:
         booking_form = BookingForm(instance=booking)
 
