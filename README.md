@@ -53,6 +53,8 @@ You make one booking, and most things are included.
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed Bugs](#fixed-bugs)
+    - [Fix for bug 1](#fix-for-bug-1)
+  - [Remaining bugs](#remaining-bugs)
 
 ## User Personas
 
@@ -594,8 +596,14 @@ The image shows my method that caused the server error.
 
 ## Fixed Bugs
 
+### Fix For Bug 1
+
 I realized my view was not handeling this at all and I added the code below to fix this issue.
 
 ![Bug fix 1](documentation/images/bug_fix_1.png)
 
 Now in case the form is not valid, the form renders again with its error message.
+
+## Remaining Bugs
+
+I currently have no bugs I am aware of.
