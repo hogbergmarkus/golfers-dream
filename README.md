@@ -33,6 +33,7 @@ You make one booking, and most things are included.
   - [Testing](#testing)
     - [Validation](#validation)
     - [Lighthouse Report](#lighthouse-report)
+    - [Responsiveness](#responsiveness)
 
 ## User Personas
 
@@ -372,3 +373,14 @@ The following are lighthouse reports from my different pages:
 - Sign out:
 
 ![Sign out](documentation/images/sign_out_lighthouse.png)
+
+### Responsiveness
+
+The website was tested throughout development to be functional for mobiles, tablets, laptops and desktops.
+
+The main devices used for testing have been:
+
+- My desktop
+- Google pixel 8 pro
+- Iphone 13 pro
+- Ipad Pro
