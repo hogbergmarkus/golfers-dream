@@ -55,6 +55,14 @@ You make one booking, and most things are included.
   - [Fixed Bugs](#fixed-bugs)
     - [Fix for bug 1](#fix-for-bug-1)
   - [Remaining bugs](#remaining-bugs)
+  - [Credits](#credits)
+    - [Custom User Model](#custom-user-model)
+    - [Customizing Admin Panel](#customizing-admin-panel)
+    - [Authentication](#authentication)
+    - [Booking View](#booking-view)
+    - [Booking Form](#booking-form)
+    - [Booking Redirect](#booking-redirect)
+    - [Django Messages](#django-messages)
 
 ## User Personas
 
@@ -607,3 +615,63 @@ Now in case the form is not valid, the form renders again with its error message
 ## Remaining Bugs
 
 I currently have no bugs I am aware of.
+
+## Credits
+
+### Custom User Model
+
+For creating my custom user model I relied on these websites:
+
+[Simpleisbetterthancomplex, Abstractuser.](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#abstractuser)
+
+[Simpleisbetterthancomplex, User types.](https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html)
+
+[Django docs, Custom user model.](https://docs.djangoproject.com/en/5.0/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project)
+
+[Django docs, Model field.](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
+
+### Customizing Admin Panel
+
+I relied on these pages to organize my admin panel:
+
+[Stackoverflow, Django admin fieldsets.](https://stackoverflow.com/questions/1437991/django-admin-fieldsets)
+
+[Stackoverflow, Add fieldsets.](https://stackoverflow.com/questions/50436596/what-is-add-fieldsets-for-in-useradmin-in-django)
+
+[Django docs, The Django admin site.](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/)
+
+### Authentication
+
+The process of adding authentication was helped by the [I think therefore I blog](https://github.com/Code-Institute-Solutions/blog) project.
+
+Additionally I used these resources to further customize my Sign up form:
+
+[Stackoverflow, Signup form.](https://stackoverflow.com/questions/69990075/create-user-and-userprofile-on-user-signup-with-django-allauth)
+
+[Stackoverflow, email required.](https://stackoverflow.com/questions/23956288/django-all-auth-email-required)
+
+### Booking View
+
+I did use the [I think therefore I blog](https://github.com/Code-Institute-Solutions/blog) project, for some help when creating the booking view.
+
+### Booking Form
+
+Getting the date picker for my booking form was helped by this page:
+
+[Stackoverflow, widgets](https://stackoverflow.com/questions/31548373/django-1-8-django-crispy-forms-is-there-a-simple-easy-way-of-implementing-a)
+
+Specifically this comment:
+
+![Widgets](documentation/images/widget_credit.png)
+
+Also this [Django documentation was helpful.](https://docs.djangoproject.com/en/5.0/topics/forms/)
+
+### Booking Redirect
+
+This [Django documentation](https://docs.djangoproject.com/en/5.0/topics/http/shortcuts/) was helpful for redirecting users
+after an action was complete.
+
+### Django Messages
+
+Django messages was helped by the 
+[I think therefore I blog](https://github.com/Code-Institute-Solutions/blog/blob/main/15_testing/templates/base.html) project.
