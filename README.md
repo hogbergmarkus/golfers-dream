@@ -34,6 +34,7 @@ You make one booking, and most things are included.
     - [Validation](#validation)
     - [Lighthouse Report](#lighthouse-report)
     - [Responsiveness](#responsiveness)
+    - [Automated Testing](#automated-testing)
 
 ## User Personas
 
@@ -395,3 +396,13 @@ The browsers tested have been:
 - Google Chrome
 - Microsoft Edge
 - Safari
+
+### Automated Testing
+
+I realize that I could have written more tests, and this is something I aim to improve upon in the future.
+
+However the tests that I have written, are for the contact form, and the booking form.
+
+Ideally, I should have written tests for every view and form, but with limited experience and time,
+
+this is what I managed to get done at this point.
