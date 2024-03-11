@@ -49,6 +49,8 @@ You make one booking, and most things are included.
       - [Sign In](#sign-in)
       - [Sign Up](#sign-up)
       - [Admin](#admin)
+  - [Bugs](#bugs)
+    - [Bug 1](#bug-1)
 
 ## User Personas
 
@@ -569,3 +571,13 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |I can view, create, edit, delete users                      |X  |   |
 |I can view, create, edit, delete bookings                   |X  |   |
 |I can view contact requests and mark them as read           |X  |   |
+
+## Bugs
+
+### Bug 1
+
+On the Booking page, I had a Server Error 500 occuring when my booking form methods caught an error.
+
+The image shows my method that caused the server error.
+
+![Bug server error](documentation/images/bug_1.png)
