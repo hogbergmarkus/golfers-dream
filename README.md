@@ -474,6 +474,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |On submission, user redirect to home page    |X  |   |
 |All fields are required                      |X  |   |
 |Email field requires an email address        |X  |   |
+|Content is responsive                        |X  |   |
 
 #### Booking
 
@@ -493,6 +494,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |Check in cannot be set after check out, or in the past      |X  |   |
 |Check out cannot be set before check in, or in the past     |X  |   |
 |Error messages let you know something was wrong             |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Profile
 
@@ -503,6 +505,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |User bookings show on page                                  |X  |   |
 |Edit button works, lets user edit correct booking           |X  |   |
 |Delete button work, lets user delete correct booking        |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Edit Booking
 
@@ -514,6 +517,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |Cancel button takes user back to profile page               |X  |   |
 |Success massage display on successful edit                  |X  |   |
 |The edited version is displayed on profile page             |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Delete Booking
 
@@ -524,6 +528,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |Confirmation page asks if user really want to delete        |X  |   |
 |Cancel button takes user back to profile page               |X  |   |
 |Press delete again and the booking is deleted               |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Sign Out
 
@@ -533,6 +538,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |Not accessible if not signed in                             |X  |   |
 |Confirmation page asks if user really want to sign out      |X  |   |
 |Sign out signs user out                                     |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Sign In
 
@@ -542,6 +548,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |All fields required                                         |X  |   |
 |Sign up button takes user to sign up page                   |X  |   |
 |Sign in works                                               |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Sign Up
 
@@ -552,6 +559,7 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |Email must be an email address                              |X  |   |
 |Sign in button takes user to sign in page                   |X  |   |
 |Sign up works                                               |X  |   |
+|Content is responsive                                       |X  |   |
 
 #### Admin
 
