@@ -35,6 +35,20 @@ You make one booking, and most things are included.
     - [Lighthouse Report](#lighthouse-report)
     - [Responsiveness](#responsiveness)
     - [Automated Testing](#automated-testing)
+    - [Manual Testing](#manual-testing)
+      - [Navbar](#navbar)
+      - [Footer](#footer)
+      - [Home Page](#home-page)
+      - [What We Offer](#what-we-offer)
+      - [Contact](#contact)
+      - [Booking](#booking)
+      - [Profile](#profile)
+      - [Edit Booking](#edit-booking)
+      - [Delete Booking](#delete-booking)
+      - [Sign Out](#sign-out)
+      - [Sign In](#sign-in)
+      - [Sign Up](#sign-up)
+      - [Admin](#admin)
 
 ## User Personas
 
@@ -406,3 +420,144 @@ However the tests that I have written, are for the contact form, and the booking
 Ideally, I should have written tests for every view and form, but with limited experience and time,
 
 this is what I managed to get done at this point.
+
+### Manual Testing
+
+Each title under "Works" was tested manually and marked with an X for yes if it works, and no if it does not.
+
+The Final tests marked here was conducted on the deployed version on Heroku.
+
+#### Navbar
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|"Golfers Dream" lead to Home page                           |X  |   |
+|Current page is active                                      |X  |   |
+|Navbar collapses to hamburger on smaller screen             |X  |   |
+|Hamburger icon expands when clicked and links still work    |X  |   |
+|Conditional statement hides profile page when not signed in |X  |   |
+|Contact link in footer leads to correct page                |X  |   |
+
+#### Footer
+
+|Works                                              |YES |NO |
+|---------------------------------------------------|:---:|---|
+|Facebook leads to correct site and opens new tab   |X  |   |
+|Instagram leads to correct site and opens new tab  |X  |   |
+|Twitter leads to correct site and opens new tab    |X  |   |
+|Home link in footer leads to correct page          |X  |   |
+|What we offer link in footer leads to correct page |X  |   |
+|Contact link in footer leads to correct page       |X  |   |
+
+#### Home Page
+
+|Works                                   |YES |NO |
+|----------------------------------------|:---:|---|
+|Page loads                              |X  |   |
+|Book now button leads to booking page   |X  |   |
+|Still leads there when signed in        |X  |   |
+|Content is responsive                   |X  |   |
+
+#### What We Offer
+
+|Works                    |YES |NO |
+|-------------------------|:---:|---|
+|Page loads               |X  |   |
+|Content is responsive    |X  |   |
+
+#### Contact
+
+|Works                                        |YES |NO |
+|---------------------------------------------|:---:|---|
+|Page loads                                   |X  |   |
+|Form can send a message to admin page        |X  |   |
+|On submission, user redirect to home page    |X  |   |
+|All fields are required                      |X  |   |
+|Email field requires an email address        |X  |   |
+
+#### Booking
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|If not signed in, user is asked to sign in/up               |X  |   |
+|Sign up button leads to correct page                        |X  |   |
+|Sign in button leads to correct page                        |X  |   |
+|After sign in, booking form loads on page                   |X  |   |
+|All fields except message is required                       |X  |   |
+|If filled out correctly, form posts to database             |X  |   |
+|Status is set to pending by default                         |X  |   |
+|Success message displays on successful submission           |X  |   |
+|Email must be an email address                              |X  |   |
+|Number of people must be set between 1 and 10               |X  |   |
+|Check in cannot be set after check out, or in the past      |X  |   |
+|Check out cannot be set before check in, or in the past     |X  |   |
+|Error messages let you know something was wrong             |X  |   |
+
+#### Profile
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|Not accessible if not signed in                             |X  |   |
+|User bookings show on page                                  |X  |   |
+|Edit button works, lets user edit correct booking           |X  |   |
+|Delete button work, lets user delete correct booking        |X  |   |
+
+#### Edit Booking
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|Not accessible if not signed in                             |X  |   |
+|Form works the same as on booking page                      |X  |   |
+|Cancel button takes user back to profile page               |X  |   |
+|Success massage display on successful edit                  |X  |   |
+|The edited version is displayed on profile page             |X  |   |
+
+#### Delete Booking
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|Not accessible if not signed in                             |X  |   |
+|Confirmation page asks if user really want to delete        |X  |   |
+|Cancel button takes user back to profile page               |X  |   |
+|Press delete again and the booking is deleted               |X  |   |
+
+#### Sign Out
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|Not accessible if not signed in                             |X  |   |
+|Confirmation page asks if user really want to sign out      |X  |   |
+|Sign out signs user out                                     |X  |   |
+
+#### Sign In
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|All fields required                                         |X  |   |
+|Sign up button takes user to sign up page                   |X  |   |
+|Sign in works                                               |X  |   |
+
+#### Sign Up
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|All fields required                                         |X  |   |
+|Email must be an email address                              |X  |   |
+|Sign in button takes user to sign in page                   |X  |   |
+|Sign up works                                               |X  |   |
+
+#### Admin
+
+|Works                                                       |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Page loads                                                  |X  |   |
+|I can view, create, edit, delete users                      |X  |   |
+|I can view, create, edit, delete bookings                   |X  |   |
+|I can view contact requests and mark them as read           |X  |   |
