@@ -23,6 +23,7 @@ You make one booking, and most things are included.
   - [Website Owner Goals](#website-owner-goals)
   - [Design](#design)
     - [Wireframes](#wireframes)
+    - [Entity Relational Diagram](#entity-relational-diagram)
     - [Fonts](#fonts)
     - [Colors](#colors)
   - [Screenshots of Finished Website](#screenshots-of-finished-website)
@@ -110,6 +111,14 @@ The website should work on any device, mobile, tablet or desktop.
 You will find the link to my wireframes here: [WireFrames](https://github.com/hogbergmarkus/golfers-dream/tree/main/documentation/wireframes).
 
 Alternatively go to my [GitHub repository](https://github.com/hogbergmarkus/golfers-dream) and look in the documentation folder.
+
+### Entity Relational Diagram
+
+As part of designing my website, I drew my models up on my Ipad.
+
+The result can be seen here:
+
+![Erd](documentation/entity_relational_diagram/erd.png)
 
 ### Fonts
 
