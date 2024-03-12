@@ -50,6 +50,15 @@ You make one booking, and most things are included.
       - [Sign In](#sign-in)
       - [Sign Up](#sign-up)
       - [Admin](#admin)
+    - [User Stories Testing](#user-stories-testing)
+      - [Criteria for Home Page](#criteria-for-home-page)
+      - [Criteria for Read About the Resort](#criteria-for-read-about-the-resort)
+      - [Criteria for View Incoming Contact Requests](#criteria-for-view-incoming-contact-requests)
+      - [Criteria for Register Account](#criteria-for-register-account)
+      - [Criteria for Make a Booking](#criteria-for-make-a-booking)
+      - [Criteria for View Bookings](#criteria-for-view-bookings)
+      - [Criteria for Edit and Delete Booking](#criteria-for-edit-and-delete-booking)
+      - [Criteria for Manage Bookings](#criteria-for-manage-bookings)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed Bugs](#fixed-bugs)
@@ -601,6 +610,76 @@ The Final tests marked here was conducted on the deployed version on Heroku.
 |I can view, create, edit, delete users                      |X  |   |
 |I can view, create, edit, delete bookings                   |X  |   |
 |I can view contact requests and mark them as read           |X  |   |
+
+### User Stories Testing
+
+Here I have viewed the user stories in my GitHub project, and carefully gone through my acceptance criteria for each user story.
+
+If the criteria is met, it is marked in these tables below.
+
+Finally the issue for each user story in my project has been closed if the acceptance criteria was met.
+
+#### Criteria for Home Page
+
+|Acceptance criteria met                                                                                    |YES |NO |
+|-----------------------------------------------------------------------------------------------------------|:---:|---|
+|The home page has a striking hero image                                                                    |X  |   |
+|On top of the image is a text box with some text and a button.                                             |X  |   |
+|The button leads to the booking page.                                                                      |X  |   |
+|In case they are not signed in the booking page has additional buttons leading them where they need to go. |X  |   |
+
+#### Criteria for Read About the Resort
+
+|Acceptance criteria met                                     |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Images are present                                          |X  |   |
+|The images are accompanied by a small amount of text        |X  |   |
+
+#### Criteria for View Incoming Contact Requests
+
+|Acceptance criteria met                                                                                    |YES |NO |
+|-----------------------------------------------------------------------------------------------------------|:---:|---|
+|The model should contain name, email, message, marks as read and created on.                               |X  |   |
+|When a user has sent the form from the contact page.                                                       |X  |   |
+|I can view the form they sent.                                                                             |X  |   |
+|I can mark it as read.                                                                                     |X  |   |
+
+#### Criteria for Register Account
+
+|Acceptance criteria met                                     |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|User can create an account                                  |X  |   |
+|Then they can sign in                                       |X  |   |
+
+#### Criteria for Make a Booking
+
+|Acceptance criteria met                                     |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|Given a signed in user they can make a booking.             |X  |   |
+
+#### Criteria for View Bookings
+
+|Acceptance criteria met                                                               |YES |NO |
+|--------------------------------------------------------------------------------------|:---:|---|
+|When a user is signed in they can see the bookings they have made.                    |X  |   |
+|If no bookings are made, display a message with a redirect button to the booking page.|X  |   |
+
+#### Criteria for Edit and Delete Booking
+
+|Acceptance criteria met                                        |YES |NO |
+|---------------------------------------------------------------|:---:|---|
+|When a user is signed in they can edit their bookings.         |X  |   |
+|They can also delete their bookings.                           |X  |   |
+|When deleting their booking there is a confirmation page.      |X  |   |
+
+#### Criteria for Manage Bookings
+
+|Acceptance criteria met                                     |YES |NO |
+|------------------------------------------------------------|:---:|---|
+|I can create bookings for users                             |X  |   |
+|I can read bookings made by users                           |X  |   |
+|I can edit bookings made by users                           |X  |   |
+|I can delete bookings made by users                         |X  |   |
 
 ## Bugs
 
