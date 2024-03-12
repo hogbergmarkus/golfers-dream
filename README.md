@@ -59,6 +59,7 @@ You make one booking, and most things are included.
       - [Criteria for View Bookings](#criteria-for-view-bookings)
       - [Criteria for Edit and Delete Booking](#criteria-for-edit-and-delete-booking)
       - [Criteria for Manage Bookings](#criteria-for-manage-bookings)
+      - [Conclusion of User Story Testing](#conclusion-of-user-story-testing)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed Bugs](#fixed-bugs)
@@ -680,6 +681,22 @@ Finally the issue for each user story in my project has been closed if the accep
 |I can read bookings made by users                           |X  |   |
 |I can edit bookings made by users                           |X  |   |
 |I can delete bookings made by users                         |X  |   |
+
+#### Conclusion of User Story Testing
+
+This website was developed for the purpose of letting users book a stay att a golf resort.
+
+The needs of said user would be to be able to see what the resort offers, sign in, and create a booking.
+
+Furthermore, allowing users to edit and delete their own bookings, relieves the resort that administration,
+
+and also speeds up the process for the user.
+
+Being able to contact the resort without an account through the contact form,
+
+will likely increase the amount of bookings made in the end. When a user is uncertain about a website,
+
+they are more likely to leave, but being able to contact the website helps relieve this barrier.
 
 ## Bugs
 
