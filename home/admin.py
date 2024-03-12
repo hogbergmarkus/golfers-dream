@@ -5,6 +5,9 @@ from .models import ContactMessage
 # Register your models here.
 @admin.register(ContactMessage)
 class ContactMessageAdmin(admin.ModelAdmin):
+    """
+    Register info from contact form in admin panel
+    """
     list_display = (
         'name',
         'email',

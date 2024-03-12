@@ -12,7 +12,7 @@ STATUS_TYPE = (
 # Create your models here.
 class Booking(models.Model):
     """
-    Stores a booking request related to :model:`auth.CustomUser`.
+    Stores a booking request related to CustomUser
     """
     customer = models.ForeignKey(
         CustomUser, on_delete=models.CASCADE
