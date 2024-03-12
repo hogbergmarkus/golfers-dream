@@ -56,13 +56,23 @@ You make one booking, and most things are included.
     - [Fix for bug 1](#fix-for-bug-1)
   - [Remaining bugs](#remaining-bugs)
   - [Credits](#credits)
-    - [Custom User Model](#custom-user-model)
-    - [Customizing Admin Panel](#customizing-admin-panel)
-    - [Authentication](#authentication)
-    - [Booking View](#booking-view)
-    - [Booking Form](#booking-form)
-    - [Booking Redirect](#booking-redirect)
-    - [Django Messages](#django-messages)
+    - [Websites](#websites)
+      - [Custom User Model](#custom-user-model)
+      - [Customizing Admin Panel](#customizing-admin-panel)
+      - [Authentication](#authentication)
+      - [Booking View](#booking-view)
+      - [Booking Form](#booking-form)
+      - [Booking Redirect](#booking-redirect)
+      - [Django Messages](#django-messages)
+      - [Creating URLs](#creating-urls)
+      - [Methods in my Booking Form](#methods-in-my-booking-form)
+      - [login_required](#login_required)
+    - [Resources](#resources)
+      - [Am I Responsive](#am-i-responsive)
+      - [Shortpixel](#shortpixel)
+      - [Favicon](#favicon)
+    - [Images](#images)
+    - [People](#people)
 
 ## User Personas
 
@@ -618,7 +628,9 @@ I currently have no bugs I am aware of.
 
 ## Credits
 
-### Custom User Model
+### Websites
+
+#### Custom User Model
 
 For creating my custom user model I relied on these websites:
 
@@ -626,11 +638,11 @@ For creating my custom user model I relied on these websites:
 
 [Simpleisbetterthancomplex, User types.](https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html)
 
-[Django docs, Custom user model.](https://docs.djangoproject.com/en/5.0/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project)
+[Django docs, Custom user model.](https://docs.djangoproject.com/en/4.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project)
 
-[Django docs, Model field.](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
+[Django docs, Model field.](https://docs.djangoproject.com/en/4.2/ref/models/fields/)
 
-### Customizing Admin Panel
+#### Customizing Admin Panel
 
 I relied on these pages to organize my admin panel:
 
@@ -638,9 +650,9 @@ I relied on these pages to organize my admin panel:
 
 [Stackoverflow, Add fieldsets.](https://stackoverflow.com/questions/50436596/what-is-add-fieldsets-for-in-useradmin-in-django)
 
-[Django docs, The Django admin site.](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/)
+[Django docs, The Django admin site.](https://docs.djangoproject.com/en/4.2/ref/contrib/admin/)
 
-### Authentication
+#### Authentication
 
 The process of adding authentication was helped by the [I think therefore I blog](https://github.com/Code-Institute-Solutions/blog) project.
 
@@ -650,11 +662,11 @@ Additionally I used these resources to further customize my Sign up form:
 
 [Stackoverflow, email required.](https://stackoverflow.com/questions/23956288/django-all-auth-email-required)
 
-### Booking View
+#### Booking View
 
 I did use the [I think therefore I blog](https://github.com/Code-Institute-Solutions/blog) project, for some help when creating the booking view.
 
-### Booking Form
+#### Booking Form
 
 Getting the date picker for my booking form was helped by this page:
 
@@ -664,14 +676,74 @@ Specifically this comment:
 
 ![Widgets](documentation/images/widget_credit.png)
 
-Also this [Django documentation was helpful.](https://docs.djangoproject.com/en/5.0/topics/forms/)
+Also this [Django documentation was helpful.](https://docs.djangoproject.com/en/4.2/topics/forms/)
 
-### Booking Redirect
+#### Booking Redirect
 
-This [Django documentation](https://docs.djangoproject.com/en/5.0/topics/http/shortcuts/) was helpful for redirecting users
+This [Django documentation](https://docs.djangoproject.com/en/4.2/topics/http/shortcuts/) was helpful for redirecting users
 after an action was complete.
 
-### Django Messages
+#### Django Messages
 
 Django messages was helped by the 
 [I think therefore I blog](https://github.com/Code-Institute-Solutions/blog/blob/main/15_testing/templates/base.html) project.
+
+#### Creating URLs
+
+This django documentation helped a lot in creating urls:
+
+[Django docs, Topic urls](https://docs.djangoproject.com/en/4.2/topics/http/urls/)
+
+#### Methods in my Booking Form
+
+The methods I use in my booking form to prevent users from, for example setting a date in the past, was helped by these websites:
+
+[Stackoverflow, Cleaned data.](https://stackoverflow.com/questions/68150814/how-to-check-if-start-date-and-end-date-takes-then-raise-an-error-django)
+
+[Stackoverflow, Difference cleaned_data and cleaned_data.get](https://stackoverflow.com/questions/7592552/difference-between-cleaned-data-and-cleaned-data-get-in-django)
+
+#### login_required
+
+The use of login_required in my views was helped by this website:
+
+[studygyaan.com](https://studygyaan.com/django/how-to-restrict-access-with-django-login-required-decorator-function)
+
+### Resources
+
+#### Am I responsive
+
+This tool was used to create the image at the top of this README:
+
+[Am I Responsive](https://ui.dev/amiresponsive)
+
+#### Shortpixel
+
+[Shortpixel](https://shortpixel.com/online-image-compression) used to compress images.
+
+#### Favicon
+
+[Favicon.io](https://favicon.io/) used to create my favicon.
+
+### Images
+
+All images used on the website was taken from [Pexels.com](https://www.pexels.com/)
+
+Links to images below:
+
+[Hero image, on home page.](https://www.pexels.com/sv-se/foto/man-moln-spelar-sport-92858/)
+
+[Golf ball, on What we offer page.](https://www.pexels.com/sv-se/foto/semester-kopp-falt-gras-54123/)
+
+[Hotel room, on What we offer page](https://www.pexels.com/sv-se/foto/ljus-hotell-lampor-textur-189333/)
+
+[Pool, on what we offer page](https://www.pexels.com/sv-se/foto/vatten-vag-bla-sommar-261403/)
+
+[Hamburger, on What we offer page](https://www.pexels.com/sv-se/foto/mat-middag-lunch-maltid-70497/)
+
+### People
+
+I want to thank my mentor Jack Wachira. Allways there with useful advice and support.
+
+Jack specifically pointed me towards login_required and explained why I should be using a custom user model, among other thing.
+
+Also a big thanks to Emily Rosenberg in my class, for helping me understand how to improve my user storys, and agile mthods.
